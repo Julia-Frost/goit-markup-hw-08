@@ -1,10 +1,8 @@
 .hero {
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  margin: 0 auto;
 
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 
   background-image: linear-gradient(
       to top,
@@ -14,17 +12,19 @@
     url('../images/hero-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
-
+  background-size: cover;
+  &__content {
+    padding: 118px 60px;
+  }
   &__title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 30px;
   }
-
   &__button {
     font-family: inherit;
     background-color: var(--hover-color);
