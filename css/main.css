@@ -89,13 +89,23 @@ p {
   text-shadow: var(--main-shadow), var(--main-shadow), var(--main-shadow);
 }
 
-.header__menu {
+.header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.header__icon {
   width: 24px;
   height: 16px;
   -webkit-transition: fill var(--main-animation);
   transition: fill var(--main-animation);
 }
-.header__menu:hover, .header__menu:focus {
+.header__icon:hover, .header__icon:focus {
   fill: var(--hover-color);
 }
 

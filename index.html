@@ -21,10 +21,17 @@
     <header class="header">
       <div class="header__content container">
         <a href="#" class="logo"><span class="logo__text">Web</span>Studio</a>
-        <svg class="header__menu">
-          <use href="./images/icons.svg#icon-menu"></use>
-          <use href="./images/icons.svg#close-btn"></use>
-        </svg>
+        <button type="button" class="header__button">
+          <svg
+            class="header__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатеть мобильного меню"
+          >
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
         <div class="header__wrap">
           <nav class="navigation">
             <ul class="navigation__list">

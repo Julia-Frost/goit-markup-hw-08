@@ -26,8 +26,15 @@
     text-shadow: var(--main-shadow), var(--main-shadow), var(--main-shadow);
   }
 }
+.header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 
-.header__menu {
+.header__icon {
   width: 24px;
   height: 16px;
   transition: fill var(--main-animation);
