@@ -60,6 +60,7 @@ p {
   border-bottom: 1px solid #ececec;
 }
 .header__content {
+  position: relative;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +100,18 @@ p {
   border: none;
 }
 
+.header__button .icon-cross {
+  display: none;
+}
+
+.header__button.is-open .icon-cross {
+  display: block;
+}
+
+.header__button.is-open .icon-menu {
+  display: none;
+}
+
 .header__icon {
   width: 24px;
   height: 16px;
@@ -111,9 +124,64 @@ p {
 
 .header__wrap {
   display: none;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 100%;
+  background-color: bisque;
 }
 
 /* Хедер */
+.navigation {
+  padding: 48px 40px;
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  -webkit-transition: color var(--main-animation);
+  transition: color var(--main-animation);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--hover-color);
+}
+.navigation__link--activ {
+  color: var(--hover-color);
+}
+
+.navigation__item:last-child {
+  margin-bottom: 302px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  -webkit-transition: color var(--main-animation);
+  transition: color var(--main-animation);
+}
+.contacts .contacts__link-blue {
+  font-size: 34px;
+  color: var(--hover-color);
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--hover-color);
+}
+.contacts__icon {
+  display: none;
+}
+
 .hero {
   max-width: 100%;
   margin: 0 auto;
