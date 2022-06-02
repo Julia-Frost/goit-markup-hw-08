@@ -3,13 +3,10 @@
 
   &__content {
     padding: 0 15px;
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-}
-
-.header__wrap {
-  display: none;
 }
 
 .logo {
@@ -30,6 +27,18 @@
   }
 }
 
+.header__menu {
+  width: 24px;
+  height: 16px;
+  transition: fill var(--main-animation);
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+  }
+}
+.header__wrap {
+  display: none;
+}
 /* Хедер */
 
 // .navigation {

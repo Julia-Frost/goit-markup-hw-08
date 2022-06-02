@@ -1,8 +1,18 @@
 // /* Ссылки на соцсети команды */
 
 .social {
-  //   margin-left: 70px;
+  margin-bottom: 60px;
 
+  &__title {
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.14;
+
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
   &-list {
     display: flex;
     justify-content: center;
@@ -31,22 +41,12 @@
         fill: var(--white-color);
       }
     }
+    &__link--white {
+      fill: var(--white-color);
+    }
     &__icon {
       width: 20px;
       height: 20px;
     }
   }
 }
-
-//   &__title {
-//     font-size: 14px;
-//     line-height: 1.14;
-//
-//     text-transform: uppercase;
-//     color: var(--white-color);
-//     margin-bottom: 20px;
-//   }
-
-//     &__link--white {
-//       fill: var(--white-color);
-//     }
