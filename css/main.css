@@ -18,6 +18,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--title-color);
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -72,7 +73,6 @@ p {
   color: var(--title-color);
   font-size: 24px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   padding: 16px 0;
   -webkit-transition: text-shadow var(--main-animation);
   transition: text-shadow var(--main-animation);
@@ -152,14 +152,12 @@ p {
   text-align: center;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .features__description {
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -169,4 +167,35 @@ p {
 
 .team {
   background-color: var(--background-color-light);
+}
+.team__title {
+  font-size: 28px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team__item {
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team .team__image {
+  max-width: 100%;
+}
+.team__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+.team__position {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--text-color);
+  margin-bottom: 16px;
 }/*# sourceMappingURL=main.css.map */
