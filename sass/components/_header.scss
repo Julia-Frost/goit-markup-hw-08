@@ -1,10 +1,11 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  //   &__content {
-  //     display: flex;
-  //     align-items: center;
-  //   }
+  &__content {
+    padding: 0 15px;
+    // display: flex;
+    // align-items: center;
+  }
 }
 
 .header__wrap {
