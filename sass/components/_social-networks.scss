@@ -1,7 +1,42 @@
 // /* Ссылки на соцсети команды */
 
-// .social {
-//   margin-left: 70px;
+.social {
+  //   margin-left: 70px;
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      fill: var(--svg-color);
+      width: 44px;
+      height: 44px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color var(--main-animation), fill var(--main-animation);
+      &:focus,
+      &:hover,
+      &:active {
+        background-color: var(--hover-color);
+        fill: var(--white-color);
+      }
+    }
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
 
 //   &__title {
 //     font-size: 14px;
@@ -12,66 +47,6 @@
 //     margin-bottom: 20px;
 //   }
 
-//   &-list {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     &__item {
-//       margin-right: 10px;
-//     }
-
-//     &__item:last-child {
-//       margin-right: 0;
-//     }
-
-//     &__link {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       background-color: rgba(255, 255, 255, 0.1);
-//       border-radius: 50%;
-//       width: 44px;
-//       height: 44px;
-//       transition: background-color var(--main-animation);
-//     }
-
 //     &__link--white {
 //       fill: var(--white-color);
 //     }
-
-//     &__link:hover,
-//     &__link:focus,
-//     &__link:active {
-//       background-color: var(--hover-color);
-//     }
-
-//     &__icon {
-//       width: 20px;
-//       height: 20px;
-//     }
-
-//     &__link {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       border-radius: 50%;
-//       fill: var(--svg-color);
-//       width: 44px;
-//       height: 44px;
-
-//       transition: background-color var(--main-animation), fill var(--main-animation);
-//     }
-
-//     &__link:focus,
-//     &__link:hover,
-//     &__link:active {
-//       background-color: var(--hover-color);
-//       fill: var(--white-color);
-//     }
-
-//     &__link--white {
-//       fill: var(--white-color);
-//     }
-//   }
-// }
