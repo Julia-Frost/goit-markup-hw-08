@@ -1,6 +1,9 @@
 // /* Наши проекты */
+.project__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
-.project__link {
+.project__item:n .project__link {
   transition: box-shadow var(--main-animation);
 
   &:hover,
@@ -17,7 +20,7 @@
 
 .project__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .project__description {
