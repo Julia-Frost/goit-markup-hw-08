@@ -131,7 +131,6 @@ p {
 
 .header__wrap {
   position: absolute;
-  height: 100vh;
   z-index: 99;
   right: 0;
   top: 0;
@@ -197,6 +196,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
@@ -214,6 +215,10 @@ p {
 
 .header__link {
   color: var(--hover-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .hero {
