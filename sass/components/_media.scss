@@ -1,4 +1,6 @@
 @media (min-width: 481px) {
+  // Адаптация хедера
+
   .header__button {
     display: none;
   }
@@ -65,8 +67,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: start;
-    &__item {
-    }
+    margin-left: 10px;
     &__item:last-child {
       margin-bottom: 10px;
     }
@@ -104,5 +105,42 @@
   }
   .header__social {
     display: none;
+  }
+
+  //   Адаптация секции Особенности
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+
+    &__item {
+      flex-basis: calc(100% / 2 - var(--card-set-gap));
+      margin-top: var(--card-set-gap);
+      margin-left: var(--card-set-gap);
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  //   Адаптация секции Наша команда
+
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+
+  .team__item {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    margin-bottom: 0;
   }
 }

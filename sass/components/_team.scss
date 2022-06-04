@@ -1,7 +1,5 @@
 .team {
   background-color: var(--background-color-light);
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
 
   &__title {
     font-size: 28px;
@@ -17,7 +15,7 @@
   }
   .team__image {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
   &__description {
