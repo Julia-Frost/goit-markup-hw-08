@@ -49,7 +49,10 @@
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 
   &__title {
     font-size: 14px;
@@ -61,7 +64,9 @@
   }
 
   &__input {
+    display: inline-block;
     width: 100%;
+    max-width: 450px;
     height: 50px;
     padding: 15px;
     margin-bottom: 20px;
