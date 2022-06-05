@@ -26,12 +26,15 @@
 .project__description {
   position: absolute;
   top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 
   font-size: 18px;
   line-height: 1.55;
 
   color: var(--white-color);
-  padding: 63px 24px;
+  padding: 24px;
   opacity: 0;
 
   transform: translateY(100%);
@@ -67,14 +70,4 @@
   color: var(--text-color);
 }
 
-// .project {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-top: calc(-1 * var(--card-set-gap));
-//   margin-left: calc(-1 * var(--card-set-gap));
-
-//   &__item {
-//     flex-basis: calc(100% / 3 - var(--card-set-gap));
-//     margin-top: var(--card-set-gap);
-//     margin-left: var(--card-set-gap);
-//   }
+//

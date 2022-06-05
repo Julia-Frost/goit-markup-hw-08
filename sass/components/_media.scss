@@ -1,4 +1,4 @@
-@media (min-width: 481px) {
+@media (min-width: 768px) {
   // Адаптация хедера
 
   .header__button {
@@ -72,6 +72,13 @@
     .contacts__link-blue {
       font-size: 12px;
       color: var(--text-color);
+      transition: color var(--main-animation);
+
+      &:hover,
+      &:focus {
+        color: var(--hover-color);
+        fill: currentColor;
+      }
     }
 
     &__icon {
@@ -128,4 +135,127 @@
   }
 
   //   Адаптация секции Футер
+
+  .footer__wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  // Адаптация страницы Портфолио
+  // Адаптация кнопок
+
+  .filters-list {
+    justify-content: center;
+  }
+
+  // Адаптация секции проектов
+
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+
+    &__item {
+      flex-basis: calc(100% / 2 - var(--card-set-gap));
+      margin-top: var(--card-set-gap);
+      margin-left: var(--card-set-gap);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  // Адаптация секции Хедер
+  .container {
+    padding: 94px 215px;
+  }
+  .header__content {
+    padding: 0 190px;
+  }
+
+  .header__wrap {
+    margin-left: 93px;
+  }
+  .contacts {
+    flex-direction: row-reverse;
+    margin-left: 0;
+    &__item:last-child {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+  // Адаптация секции Герой
+
+  .hero__title {
+    font-size: 44px;
+  }
+  // Адаптация секции Особенности
+
+  .features {
+    flex-wrap: nowrap;
+  }
+
+  .features__title {
+    text-align: start;
+  }
+  // Адаптация секции Чем мы занимаемся
+  .business {
+    padding-top: 0;
+    display: block;
+    &__wrap {
+      padding-top: 0;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__content {
+      position: relative;
+    }
+    &__image {
+      display: block;
+      width: 100%;
+      max-width: 370px;
+    }
+    &__description {
+      position: absolute;
+      bottom: 0;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+
+      text-transform: uppercase;
+      color: var(--white-color);
+      background-color: var(--business-description-bgc);
+    }
+  }
+  // Адаптация секции Наша команда
+}
+
+// Адаптация секции Постоянные клиенты
+// Адаптация секции Футер
+
+// Адаптация страницы Портфолио
+// Адаптация кнопок
+// Адаптация секции проектов
+
+@media (min-width: 1260px) {
+  .header__content {
+    padding: 0 215px;
+  }
 }

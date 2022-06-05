@@ -129,6 +129,7 @@
   &__link:hover,
   &__link:focus {
     color: var(--hover-color);
+    fill: currentColor;
   }
 
   &__icon {
