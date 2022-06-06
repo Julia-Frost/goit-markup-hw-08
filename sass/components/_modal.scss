@@ -1,7 +1,11 @@
 /* Модальное окно */
+body.modal-open {
+  overflow: hidden;
+}
 
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,7 +28,6 @@
 
 .modal {
   position: absolute;
-  overflow-y: scroll;
   top: 50%;
   left: 50%;
   max-width: 450px;

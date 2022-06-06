@@ -45,16 +45,13 @@
   display: block;
 }
 
-.header__button.is-open body {
-  overflow-y: scroll;
-}
-
 .header__button.is-open .icon-menu {
   display: none;
 }
 
 .header__wrap {
   visibility: hidden;
+  overflow-y: scroll;
   pointer-events: none;
   position: absolute;
   z-index: 99;
@@ -92,7 +89,7 @@ body .header__wrap.is-open {
 }
 
 .navigation__item:last-child {
-  margin-bottom: 302px;
+  margin-bottom: 200px;
 }
 
 .navigation__link {

@@ -41,6 +41,7 @@ p {
 
 .container {
   width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   padding: 60px 15px;
 }
@@ -110,16 +111,13 @@ p {
   display: block;
 }
 
-.header__button.is-open body {
-  overflow-y: scroll;
-}
-
 .header__button.is-open .icon-menu {
   display: none;
 }
 
 .header__wrap {
   visibility: hidden;
+  overflow-y: scroll;
   pointer-events: none;
   position: absolute;
   z-index: 99;
@@ -157,7 +155,7 @@ body .header__wrap.is-open {
 }
 
 .navigation__item:last-child {
-  margin-bottom: 302px;
+  margin-bottom: 200px;
 }
 
 .navigation__link {
@@ -623,8 +621,13 @@ body .header__wrap.is-open {
 }
 
 /* Модальное окно */
+body.modal-open {
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -647,7 +650,6 @@ body .header__wrap.is-open {
 
 .modal {
   position: absolute;
-  overflow-y: scroll;
   top: 50%;
   left: 50%;
   max-width: 450px;
@@ -927,6 +929,10 @@ body .header__wrap.is-open {
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 769px;
+  }
+
   .header__button {
     display: none;
   }
@@ -1134,6 +1140,7 @@ body .header__wrap.is-open {
 }
 @media (min-width: 1200px) {
   .container {
+    max-width: 1600px;
     padding: 94px 215px;
   }
 

@@ -1,6 +1,8 @@
 @media (min-width: 768px) {
   // Адаптация хедера
-
+  .container {
+    max-width: 769px;
+  }
   .header__button {
     display: none;
   }
@@ -176,6 +178,7 @@
 @media (min-width: 1200px) {
   // Адаптация секции Хедер
   .container {
+    max-width: 1600px;
     padding: 94px 215px;
   }
   .header__content {
@@ -238,8 +241,6 @@
   }
   .subscribe {
     margin-left: 60px;
-    &__title {
-    }
     &__input {
       width: 358px;
       margin-bottom: 20px;
