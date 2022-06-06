@@ -10,6 +10,7 @@
     pointer-events: auto;
     background-color: transparent;
     margin-left: 88px;
+    z-index: 0;
   }
   .navigation {
     display: flex;
@@ -182,7 +183,7 @@
   }
 
   .header__wrap {
-    margin-left: 93px;
+    margin-left: 60px;
   }
   .contacts {
     flex-direction: row-reverse;
@@ -208,48 +209,9 @@
   }
   // Адаптация секции Чем мы занимаемся
   .business {
-    padding-top: 0;
     display: block;
     &__wrap {
       padding-top: 0;
-    }
-
-    &__title {
-      font-size: 36px;
-      line-height: 1.16;
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    &__list {
-      display: flex;
-      justify-content: space-between;
-    }
-    &__item:not(:last-child) {
-      margin-right: 30px;
-    }
-    &__content {
-      position: relative;
-    }
-    &__image {
-      display: block;
-      width: 100%;
-      max-width: 370px;
-    }
-    &__description {
-      position: absolute;
-      bottom: 0;
-      padding-top: 27px;
-      padding-bottom: 27px;
-      width: 100%;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      text-align: center;
-
-      text-transform: uppercase;
-      color: var(--white-color);
-      background-color: var(--business-description-bgc);
     }
   }
   // Адаптация секции Наша команда
@@ -267,7 +229,6 @@
   .footer__content {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
   }
   .footer__wrap {
     margin-bottom: 0;
@@ -276,21 +237,21 @@
     margin-right: 60px;
   }
   .subscribe {
-    display: block;
-    text-align: start;
     margin-left: 60px;
     &__title {
     }
     &__input {
       width: 358px;
-      margin-right: 12px;
       margin-bottom: 20px;
     }
   }
 
   // Адаптация страницы Портфолио
-  // Адаптация кнопок
   // Адаптация секции проектов
+
+  .project__item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
 
   // Адаптация страницы Модального окна
 }
@@ -299,18 +260,30 @@
   .header__content {
     padding: 0 215px;
   }
+  .header__wrap {
+    margin-left: 80px;
+  }
 }
 @media (min-width: 1400px) {
+  .header__wrap {
+    margin-left: 93px;
+  }
   .subscribe {
     margin-left: 93px;
   }
   .address {
     margin-right: 70px;
   }
-  .subscribe__wrap {
-    display: flex;
-  }
-  .subscribe__input {
-    margin-right: 12px;
+
+  .subscribe {
+    &__wrap {
+      display: flex;
+    }
+    display: block;
+    text-align: start;
+    &__input {
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
   }
 }

@@ -3,7 +3,7 @@
   margin-bottom: 30px;
 }
 
-.project__item:n .project__link {
+.project__link {
   transition: box-shadow var(--main-animation);
 
   &:hover,
@@ -34,7 +34,7 @@
   line-height: 1.55;
 
   color: var(--white-color);
-  padding: 24px;
+  padding: 24px 24px;
   opacity: 0;
 
   transform: translateY(100%);

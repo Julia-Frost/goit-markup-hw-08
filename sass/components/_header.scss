@@ -45,6 +45,10 @@
   display: block;
 }
 
+.header__button.is-open body {
+  overflow-y: scroll;
+}
+
 .header__button.is-open .icon-menu {
   display: none;
 }
@@ -63,6 +67,10 @@
 .header__wrap.is-open {
   visibility: visible;
   pointer-events: auto;
+}
+
+body .header__wrap.is-open {
+  overflow: hidden;
 }
 
 .header__icon {
@@ -84,7 +92,7 @@
 }
 
 .navigation__item:last-child {
-  margin-bottom: 200px;
+  margin-bottom: 302px;
 }
 
 .navigation__link {
