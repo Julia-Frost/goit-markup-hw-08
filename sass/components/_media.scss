@@ -13,6 +13,7 @@
     background-color: transparent;
     margin-left: 88px;
     z-index: 0;
+    overflow-y: auto;
   }
   .navigation {
     display: flex;
@@ -158,6 +159,10 @@
 
   .filters-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filters-list__item:not(:last-child) {
+    margin-bottom: 0;
   }
 
   // Адаптация секции проектов
@@ -172,6 +177,9 @@
       flex-basis: calc(100% / 2 - var(--card-set-gap));
       margin-top: var(--card-set-gap);
       margin-left: var(--card-set-gap);
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 }
