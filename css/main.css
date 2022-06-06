@@ -39,6 +39,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   max-width: 480px;
@@ -332,11 +338,6 @@ body .header__wrap.is-open {
 .business__content {
   position: relative;
 }
-.business__image {
-  display: block;
-  width: 100%;
-  max-width: 370px;
-}
 .business__description {
   position: absolute;
   bottom: 0;
@@ -366,10 +367,6 @@ body .header__wrap.is-open {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
-}
-.team .team__image {
-  display: block;
-  width: 100%;
 }
 .team__description {
   padding-top: 30px;
@@ -873,11 +870,6 @@ body.modal-open {
 .project__label {
   position: relative;
   overflow: hidden;
-}
-
-.project__image {
-  display: block;
-  width: 100%;
 }
 
 .project__description {
