@@ -45,3 +45,13 @@
     background-color: var(--button-hover-color);
   }
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url('../images/img/hero-mobil@2x.jpg');
+  }
+}

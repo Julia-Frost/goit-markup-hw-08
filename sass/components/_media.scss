@@ -105,6 +105,16 @@
       ),
       url('../images/img/hero-tablet.jpg');
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to top,
+          var(--hero-background-color),
+          var(--hero-background-color)
+        ),
+        url('../images/img/hero-tablet@2x.jpg');
+    }
+  }
 
   //   Адаптация секции Особенности
 
@@ -224,6 +234,20 @@
       ),
       url('../images/img/hero-desktop.jpg');
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to top,
+          var(--hero-background-color),
+          var(--hero-background-color)
+        ),
+        url('../images/img/hero-desktop@2x.jpg');
+    }
+  }
+  .hero__content {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   .hero__title {
     font-size: 44px;
   }
@@ -279,6 +303,9 @@
   .project__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
   }
+  .project__description {
+    font-size: 14px;
+  }
 
   // Адаптация страницы Модального окна
 }
@@ -312,39 +339,5 @@
       margin-right: 12px;
       margin-bottom: 0;
     }
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to top,
-        var(--hero-background-color),
-        var(--hero-background-color)
-      ),
-      url('../images/img/hero-mobil@2x.jpg');
-  }
-}
-@media (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to top,
-        var(--hero-background-color),
-        var(--hero-background-color)
-      ),
-      url('../images/img/hero-tablet@2x.jpg');
-  }
-}
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to top,
-        var(--hero-background-color),
-        var(--hero-background-color)
-      ),
-      url('../images/img/hero-desktop@2x.jpg');
   }
 }
