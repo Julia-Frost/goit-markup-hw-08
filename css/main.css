@@ -270,8 +270,8 @@ img {
   padding: 10px 32px;
   -webkit-box-shadow: var(--main-shadow);
           box-shadow: var(--main-shadow);
-  -webkit-transition: background-colorvar(--main-animation);
-  transition: background-colorvar(--main-animation);
+  -webkit-transition: background-color var(--main-animation);
+  transition: background-color var(--main-animation);
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--button-hover-color);
