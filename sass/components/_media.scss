@@ -95,6 +95,17 @@
     display: none;
   }
 
+  //   Адаптация секции Герой
+
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url('../images/img/hero-tablet.jpg');
+  }
+
   //   Адаптация секции Особенности
 
   .features {
@@ -205,7 +216,14 @@
     }
   }
   // Адаптация секции Герой
-
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url('../images/img/hero-desktop.jpg');
+  }
   .hero__title {
     font-size: 44px;
   }
@@ -294,5 +312,39 @@
       margin-right: 12px;
       margin-bottom: 0;
     }
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url('../images/img/hero-mobil@2x.jpg');
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url('../images/img/hero-tablet@2x.jpg');
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url('../images/img/hero-desktop@2x.jpg');
   }
 }
