@@ -1,8 +1,6 @@
 @media (min-width: 768px) {
   // Адаптация хедера
-  .container {
-    max-width: 769px;
-  }
+
   .header__button {
     display: none;
   }
@@ -150,7 +148,9 @@
     flex-basis: calc(100% / 2 - var(--card-set-gap));
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
-    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   //   Адаптация секиции Постоянные клиенты
@@ -206,17 +206,10 @@
 }
 @media (min-width: 1200px) {
   // Адаптация секции Хедер
-  .container {
-    max-width: 1600px;
-    padding: 94px 215px;
-  }
-  .header__content {
-    padding: 0 190px;
+  .header__wrap {
+    margin-left: 93px;
   }
 
-  .header__wrap {
-    margin-left: 60px;
-  }
   .contacts {
     flex-direction: row-reverse;
     margin-left: 0;
@@ -227,6 +220,9 @@
   }
   // Адаптация секции Герой
   .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to top,
         var(--hero-background-color),
@@ -244,15 +240,14 @@
         url('../images/img/hero-desktop@2x.jpg');
     }
   }
-  .hero__content {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
   .hero__title {
     font-size: 44px;
   }
   // Адаптация секции Особенности
-
+  .specialty {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .features {
     flex-wrap: nowrap;
   }
@@ -263,22 +258,30 @@
   // Адаптация секции Чем мы занимаемся
   .business {
     display: block;
-    &__wrap {
-      padding-top: 0;
-    }
   }
   // Адаптация секции Наша команда
-  .team__list {
-    flex-wrap: nowrap;
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    .team__list {
+      flex-wrap: nowrap;
+    }
   }
 
   // Адаптация секции Постоянные клиенты
-
-  .clients__list {
-    flex-wrap: nowrap;
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    .clients__list {
+      flex-wrap: nowrap;
+    }
   }
 
   // Адаптация секции Футер
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .footer__content {
     display: flex;
     justify-content: space-between;
@@ -286,20 +289,26 @@
   .footer__wrap {
     margin-bottom: 0;
   }
-  .address {
-    margin-right: 60px;
+  .social {
+    margin-left: 70px;
   }
   .subscribe {
-    margin-left: 60px;
+    display: block;
+    text-align: start;
+
     &__input {
       width: 358px;
-      margin-bottom: 20px;
+      margin-right: 12px;
+      margin-bottom: 0;
     }
   }
 
   // Адаптация страницы Портфолио
   // Адаптация секции проектов
-
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .project__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
   }
@@ -308,36 +317,7 @@
   }
 
   // Адаптация страницы Модального окна
-}
-
-@media (min-width: 1260px) {
-  .header__content {
-    padding: 0 215px;
-  }
-  .header__wrap {
-    margin-left: 80px;
-  }
-}
-@media (min-width: 1400px) {
-  .header__wrap {
-    margin-left: 93px;
-  }
-  .subscribe {
-    margin-left: 93px;
-  }
-  .address {
-    margin-right: 70px;
-  }
-
-  .subscribe {
-    &__wrap {
-      display: flex;
-    }
-    display: block;
-    text-align: start;
-    &__input {
-      margin-right: 12px;
-      margin-bottom: 0;
-    }
+  .modal {
+    max-width: 528px;
   }
 }

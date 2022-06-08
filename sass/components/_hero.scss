@@ -1,6 +1,8 @@
 .hero {
   max-width: 100%;
   margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   text-align: center;
 
@@ -13,9 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  &__content {
-    padding: 118px 60px;
-  }
+
   &__title {
     font-weight: 900;
     font-size: 26px;
@@ -44,14 +44,15 @@
   &__button:focus {
     background-color: var(--button-hover-color);
   }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to top,
-        var(--hero-background-color),
-        var(--hero-background-color)
-      ),
-      url('../images/img/hero-mobil@2x.jpg');
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to top,
+          var(--hero-background-color),
+          var(--hero-background-color)
+        ),
+        url('../images/img/hero-mobil@2x.jpg');
+    }
   }
 }
