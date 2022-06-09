@@ -242,7 +242,7 @@ img {
 }
 
 .hero {
-  max-width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -540,13 +540,16 @@ img {
   text-shadow: 0px 4px 4px rgba(117, 117, 117, 0.4), 0px 4px 4px rgba(117, 117, 117, 0.4), 0px 4px 4px rgba(117, 117, 117, 0.4);
 }
 
+.footer__part {
+  margin-bottom: 60px;
+}
+
 .address {
   text-align: center;
   font-style: normal;
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
-  margin-bottom: 60px;
 }
 .address__text {
   margin-bottom: 9px;
@@ -1147,7 +1150,7 @@ body.modal-open {
   }
 }
 @media (min-width: 768px) {
-  .address {
+  .footer__part {
     margin-bottom: 0;
   }
 }
@@ -1201,7 +1204,6 @@ body.modal-open {
   }
 
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-background-color)), to(var(--hero-background-color))), url("../images/img/hero-desktop.jpg");
@@ -1259,12 +1261,6 @@ body.modal-open {
   .clients .clients__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-}
-@media (min-width: 1200px) {
-  .footer {
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 @media (min-width: 1200px) {
