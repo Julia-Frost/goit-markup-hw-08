@@ -192,12 +192,20 @@
     margin-left: calc(-1 * var(--card-set-gap));
 
     &__item {
+      display: flex;
       flex-basis: calc(100% / 2 - var(--card-set-gap));
       margin-top: var(--card-set-gap);
       margin-left: var(--card-set-gap);
       &:not(:last-child) {
         margin-bottom: 0;
       }
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
+    &__content {
+      flex-grow: 1;
     }
   }
 }
@@ -304,6 +312,7 @@
   .project__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
   }
+
   .project__description {
     font-size: 14px;
   }
